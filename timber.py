@@ -32,3 +32,33 @@ def factorial():
         for i in range(1, n + 1):
             fact *= i
         print(f"El factorial de {n} es {fact}")
+
+def multi_table():
+    number = input("Insertar un numero (1-10): ")
+
+    if number.isdigit():
+        number = int(number)
+
+        if 1 <= number <= 10:
+            print(f"\nTabla {number}\n")
+            for i in range(1,11):
+                print (f"{number} x {i} = {number * i}")
+        else:
+            print("Insertar un numero (1-10)")
+    else:
+        print("Entrada no valida.")
+
+def square_cube():
+    number = input("Insertar un numero: ")
+
+    if number.isdigit():
+        number = int(number)
+
+        square = number**2
+        cube = number**3
+
+        print(f"Numero: {number}")
+        print(f"Cuadro: {square}")
+        print(f"Cubo: {cube}")
+    else:
+        print("Entrada no valida.")
