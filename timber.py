@@ -90,3 +90,44 @@ def maximo_minimo():
     print("Valor máximo:", max(numeros))
     print("Valor mínimo:", min(numeros))
     print("Total de valores ingresados:", len(numeros))
+
+def menu():
+    while True:
+        print("\n--- MENÚ DE OPCIONES ---")
+        print("1. Suma de n números")
+        print("2. Producto de n números")
+        print("3. División entre dos números")
+        print("4. Factorial de un número")
+        print("5. Tabla de multiplicar")
+        print("6. Cuadrado y cubo de un número")
+        print("7. Promedio de una serie de números")
+        print("8. Máximo y mínimo de n números")
+        print("9. Salir")
+
+        opcion = input("Seleccione una opción: ")
+
+        if opcion == "1":
+            suma_numeros()
+        elif opcion == "2":
+            producto_numeros()
+        elif opcion == "3":
+            division()
+        elif opcion == "4":
+            factorial()
+        elif opcion == "5":
+            tabla_multiplicar()
+        elif opcion == "6":
+            cuadrado_cubo()
+        elif opcion == "7":
+            promedio()
+        elif opcion == "8":
+            maximo_minimo()
+        elif opcion == "9":
+            print("Programa finalizado")
+            break
+        else:
+            print("Opción no válida")
+
+
+# Ejecutar el programa
+menu()
