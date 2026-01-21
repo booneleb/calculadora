@@ -23,6 +23,7 @@ def division():
     else:
         print("Error: No se puede dividir entre cero")
 
+
 def factorial():
     n = int(input("Ingrese un número entero positivo: "))
     if n < 0:
